@@ -1,0 +1,252 @@
+
+.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+.motion-videos iframe{
+}
+
+.motion-videos{
+margin-left: auto;
+margin-right: auto;
+width: 1200px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+}
+
+.iframe-container{
+    width: 600px;
+}
+.vid-margin{
+margin-left: 5px;
+margin-right: 5px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+body{
+    background-color: #12181C;
+    font-family: montserrat;
+}
+
+.menu-bar{
+    width: 50%;
+    margin: auto;
+}
+.menu-bar ul{
+    list-style: none;
+    display: flex;
+    color: #e9e9e9;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 24px;
+    padding: 0;
+}
+
+a {
+    color: #e9e9e9;
+    text-decoration: none; /* no underline */
+  }
+
+.img-container{
+    width: 250px;
+}
+
+.header{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px orange solid; */
+}
+
+.header-text{
+height: inherit;
+color: #F2F2F2;
+font-weight: 600;
+margin: auto;
+margin-left: 20px;
+margin-right: 0;
+/* border: 1px orange solid; */
+}
+
+.header-text span {
+    vertical-align: middle;
+}
+
+.header-text h3{
+line-height: 0;
+font-weight: 600;
+
+}
+.header-text h1{
+    line-height: 1;
+    font-weight: 600;
+    font-size: 2.5em;
+    margin-block-start: 0.17em;
+    margin-block-end: 0.17em;
+
+}
+
+.header-text h4{
+    margin-block-start:0;
+    font-size: 1.13em;
+    font-weight: 600;
+    margin-block-start: 0.17em;
+    margin-block-end: 0.17em;
+} 
+
+.header-text h6{
+    margin-block-start:0;
+    font-weight: 600;
+    text-align: right;
+    margin-block-end: 0.17em;
+} 
+
+.line-divider{
+    width: 100vw;
+    height: 30px;
+}
+.line-divider img{
+    position: relative;
+    margin-top: -80px;
+    z-index: -1;
+
+}
+.long-bois{
+    display: flex;
+}
+.longbois-item{
+    width: 100%;
+}
+
+
+
+
+.design-container {
+    width: 200px;
+}
+.design-container img{
+    margin: 20px;
+    width: 200px;
+}
+
+.unselected{
+    color: #4e5961;
+}
+
+@media only screen and (max-width: 1200px) {
+    .motion-videos{
+
+        width: 95%;
+        }
+        
+    .iframe-container{
+        width: 100%;
+    }
+    .long-bois{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .longbois-item{
+        margin: 0;
+        width: 100%;
+    }
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    .header{
+        width: 500px;
+    }
+    .img-container{
+        width: 200px;
+    }
+    .header-text h3{
+        font-size: .8em;
+    }
+    .header-text h1{
+        line-height: 1;
+        font-weight: 600;
+        font-size: 1.5em;
+        margin-block-start: 0.17em;
+        margin-block-end: 0.17em;
+    
+    }
+    
+    .header-text h4{
+        margin-block-start:0;
+        font-size: .7em;
+        font-weight: 600;
+        margin-block-start: 0.17em;
+        margin-block-end: 0.17em;
+    } 
+    
+    .header-text h6{
+        font-size: .7em;
+    } 
+
+    .menu-bar ul{
+        font-size: .8em;
+    }
+    .line-divider img{
+        margin-top: -50px;
+    }
+    .line-divider {
+        height: 10px;
+    }
+    
+}
+@media only screen and (max-width: 800px) {
+
+    .design-container {
+
+        width: 80%;
+    }
+
+    .design-container img {
+        margin: 0;
+        margin-top: 10px;
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .header{
+        width: 300px;
+        flex-direction: column;
+    }
+    .img-container{
+        width: 200px;
+    }
+    .header-text h3{
+        text-align: center;
+    }
+    .header-text h1{
+        text-align: center;
+    }
+    
+    .header-text h4{
+        text-align: center;    } 
+    
+    .header-text h6{
+        text-align: center;
+        font-size: .5em
+    }
+
+    .menu-bar{
+
+    }
+    .menu-bar ul{
+        font-size: 1em;
+    }
+    .line-divider{
+        height: 50px;
+    }
+    .line-divider img{
+        margin-top: 0px;
+    }
+
+}
