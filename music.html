@@ -1,13 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet/less" type="text/css" href="icons.less" />
+        <script src="https://kit.fontawesome.com/bdf9ae4b9c.js" crossorigin="anonymous"></script>
+        <title>Jai's Portfolio</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" ></script>
+    </head>
+    <body>
+        <div class="nav-bar">
+            <nav>
+                <ul >
+                    <li> <a class="" href="/">Work</a> </li>
+                    <li> <a class="unselected" href="skills.html">Skills</a> </li>
+                    <li> <a class="unselected" href="contact.html">Contact</a> </li>
+                </ul>
+            </nav>
+        </div>
+        <br><br><br>
     <div class="header">
         <div class="img-container">
             <img src="/Public/profile jai.svg" alt="">
@@ -24,21 +38,41 @@
     <div class="line-divider">
         <img src="./Public/curvedline.svg" alt="">
     </div>
-    <div class="menu-bar">
+    <div id="menu" class="menu-bar">
         <ul>
             <li> <a class="unselected" href="design.html">Design</a> </li>
             <li> <a class="unselected" href="/">Motion</a> </li>
             <li> <a href="music.html">Music</a> </li>
+            <li> <a class="unselected" href="https://github.com/jaytomar" target="_blank">Github</a> </li>
+
         </ul>
     </div>
     <div class="motion-videos">
         <div class="iframe-container">
             <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/806906590&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/musictimelines" title="timelines" target="_blank" style="color: #cccccc; text-decoration: none;">timelines</a> · <a href="https://soundcloud.com/musictimelines/timelines-gone" title="timelines - gone" target="_blank" style="color: #cccccc; text-decoration: none;">timelines - gone</a></div>
             <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/704498422&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/musictimelines" title="timelines" target="_blank" style="color: #cccccc; text-decoration: none;">timelines</a> · <a href="https://soundcloud.com/musictimelines/lofi-thoughts" title="lofi thoughts" target="_blank" style="color: #cccccc; text-decoration: none;">lofi thoughts</a></div>
+            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/548724573&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/musictimelines" title="timelines" target="_blank" style="color: #cccccc; text-decoration: none;">timelines</a> · <a href="https://soundcloud.com/musictimelines/elliot" title="Elliot" target="_blank" style="color: #cccccc; text-decoration: none;">Elliot</a></div>
             <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/632126604&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/afterhoursindia" title="Afterhours." target="_blank" style="color: #cccccc; text-decoration: none;">Afterhours.</a> · <a href="https://soundcloud.com/afterhoursindia/ah029" title="Timelines - I'm Falling [AH029]" target="_blank" style="color: #cccccc; text-decoration: none;">Timelines - I'm Falling [AH029]</a></div>
+            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/432092850&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/futurevibesin" title="Future Vibes" target="_blank" style="color: #cccccc; text-decoration: none;">Future Vibes</a> · <a href="https://soundcloud.com/futurevibesin/divineflip" title="Divine - One Side Trap Remix [Future Vibes Remix]" target="_blank" style="color: #cccccc; text-decoration: none;">Divine - One Side Trap Remix [Future Vibes Remix]</a></div>
+            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/343586171&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/futurevibesin" title="Future Vibes" target="_blank" style="color: #cccccc; text-decoration: none;">Future Vibes</a> · <a href="https://soundcloud.com/futurevibesin/future-vibes-skyline" title="Future Vibes - Skyline" target="_blank" style="color: #cccccc; text-decoration: none;">Future Vibes - Skyline</a></div>
+            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/430997193&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/futurevibesin" title="Future Vibes" target="_blank" style="color: #cccccc; text-decoration: none;">Future Vibes</a> · <a href="https://soundcloud.com/futurevibesin/nucleyaflip" title="Nucleya - Lights [Future Vibes Flip]" target="_blank" style="color: #cccccc; text-decoration: none;">Nucleya - Lights [Future Vibes Flip]</a></div>
         </div>
-
+    </div>
+    <div class="center">
+        <div id="social-test">
+            <div class="catch">
+            <p class="medium">like what you see ?</p>
+            <p class="large">Connect with me</p>
+            </div>
+            <ul class="social">
+                <li><a href="https://instagram.com/jaykaylmao"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.behance.net/jaytomar"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/jaytomar/"><i class="fab fa-linkedin-in" aria-hidden="true"></a></i></li>
+                <li><a href="https://github.com/jaytomar"><i class="fa fa-github" aria-hidden="true"></a></i></li>
+                </ul>
+            <p class="credits">or mail at <a href="mailto:jaytomar26@gmail.com"> jaytomar26@gmail.com</a></p>
+        </div>
     </div>
     </body>
-</div>
+    <script src="script.js"></script>
 </html>
