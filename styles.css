@@ -319,5 +319,8 @@ font-weight: 600;
     .line-divider img{
         margin-top: 0px;
     }
+    .resume{
+        width: 300px;
+    }
 
 }
