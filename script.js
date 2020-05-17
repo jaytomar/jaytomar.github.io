@@ -17,17 +17,17 @@ function myFunction() {
   var y = window.matchMedia('(max-width: 1000px)')
 
 
-  console.log(window.pageYOffset , sticky);
-  console.log(y.matches);
-  console.log(x.matches);
-  console.log(z.matches);
-  console.log(a.matches);
+  // console.log(window.pageYOffset , sticky);
+  // console.log(y.matches);
+  // console.log(x.matches);
+  // console.log(z.matches);
+  // console.log(a.matches);
 
   
 
 
    if (x.matches) {
-     console.log('x working');
+    //  console.log('x working');
      
     if (window.pageYOffset > 381) {
       header.classList.add("fixed");
@@ -37,7 +37,7 @@ function myFunction() {
   }
 
   else if (y.matches) {
-    console.log('y wokring');
+    // console.log('y wokring');
     
     if (window.pageYOffset > 298) {
       header.classList.add("fixed");
@@ -47,7 +47,7 @@ function myFunction() {
   }
   else{
     if (window.pageYOffset > sticky) {
-      console.log('default working');
+      // console.log('default working');
       
       header.classList.add("fixed");
     } else {
