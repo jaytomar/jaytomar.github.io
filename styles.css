@@ -165,12 +165,12 @@ font-weight: 600;
 
 
 .design-container {
-    width: 200px;
+    width: 300px;
 }
 .design-container img{
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 200px;
+    width: 300px;
 }
 
 .unselected{
@@ -267,6 +267,14 @@ font-weight: 600;
     }
     .line-divider {
         height: 50px;
+    }
+    .design-container {
+        width: 250px;
+    }
+    .design-container img{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 250px;
     }
     
 }
