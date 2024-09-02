@@ -1,103 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166009021-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-166009021-1');
-</script>
-    <meta property="og:image" content="https://jaytomar.github.io/Public/design/jai-portfolio-og.png"/>
-    <meta name="description" content="Jai's portfolio showcasing all his design and motion graphics work in one place">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet/less" type="text/css" href="icons.less" />
-    <script src="https://kit.fontawesome.com/bdf9ae4b9c.js" crossorigin="anonymous"></script>
-    <title>Jai's Portfolio</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" ></script>
+    <title>Document</title>
 </head>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+<script>
+    
+</script>
+<style>
+    @font-face {
+        font-family: 'reckless';
+        src: url('/Public/RecklessTRIAL-Bold.otf')  format('opentype');
+        src: url('/Public/RecklessTRIAL-Regular.otf')  format('opentype');
+        src: url('/Public/RecklessTRIAL-Light.otf')  format('opentype');
+    }
+
+    @font-face {
+        font-family: 'Switzer';
+        src: url('/Public/Switzer-Regular.otf')  format('opentype');
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        outline: 0;
+        margin: 0;
+    }
+    .inner-section{
+        max-width:1920px;
+        display: flex;
+        align-content: center;
+    }
+
+    .main-section{
+        width: 100vw;
+        display: flex;
+        justify-content: center; 
+    }
+    .box1{
+        display: flex;
+        /* background-color: aqua; */
+        max-width: 1000px;
+        max-height: 300px;
+        align-self: center;
+    }
+    .box1 h2{
+        font-size: 42px;
+    }
+    h2{
+        font-family: "reckless";
+        font-size: 42px;
+        margin: 5px 0px;
+    }
+    p{
+        font-family: "Switzer" !important;
+        font-size: 18px;
+        margin: 5px 0px;
+
+    }
+    .flex-row{
+        display:flex;
+        
+    }
+
+    .regular{
+        font-family: "reckless";
+    }
+    .align-center{
+        align-self: center;
+    }
+
+    video, img{
+        max-height:300px;
+        display: flex;
+        outline: none;
+        border: none;
+
+    }
+
+    .video-box{
+        max-width: 800px;
+    }
+    .text-box{
+        padding: 20px;
+    }
+    video, img {
+clip-path: inset(2px 2px);
+}
+
+.middle-text{
+    font-size: 48px;
+    margin: 45px;
+}
+</style>
 <body>
-    <div class="nav-bar">
-        <nav>
-            <ul >
-                <li> <a class="" href="/">Work</a> </li>
-                <li> <a class="unselected" href="skills.html">Skills</a> </li>
-                <li> <a class="unselected" href="contact.html">Contact</a> </li>
-            </ul>
-        </nav>
-    </div>
-    <br><br><br>
-    <div class="header">
-        <div class="img-container">
-            <img src="/Public/profile jai.svg" alt="">
+    <div class="main-section">
+        <div class="innver-section">
+            <lottie-player src="Public/main header.json" background="transparent"  speed=".9"   loop  autoplay></lottie-player>
         </div>
-        <div class="header-text">
-            <span>
-                <h3>Hello, I'm</h3>
-                <h1>Jai Singh Tomar</h1>
-                <h4>Designer and Front end Developer</h4>
-                <h6>+ a music producer</h6>
-            </span>
-        </div>
-    </div>  
-    <div class="line-divider">
-        <img src="./Public/curvedline.svg" alt="">
     </div>
-    <div id="menu" class="menu-bar">
-        <ul>
-            <li> <a class="unselected" href="design.html">Design</a> </li>
-            <li> <a href="/">Motion</a> </li>
-            <li> <a class="unselected" href="music.html">Music</a> </li>
-            <li> <a class="unselected" href="https://github.com/jaytomar" target="_blank">Github</a> </li>
-        </ul>
-    </div>
-    <div class="motion-videos">
-        <div class="iframe-container">
-            <div class="long-bois">
-                <div class="longbois-item">
-                    <div class="vid-margin"style="padding:177.78% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/411696787" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    <h2 class="align-center regular middle-text">Check out my work!</h2>
+    <div class="box1">
+        <div>
+            <div class="flex-row">
+                <div class="video-box">
+                    <video src="/Public/snowsurance thumbnail.mp4" autoplay loop></video>
                 </div>
-                <div class="longbois-item">
-                    <div class="vid-margin"style="padding:177.78% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/381428249" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                <div class="text-box">
+                    <h2>Snowsurance TV Commercial</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident labore</p>
                 </div>
             </div>
-            <div class="vid-margin" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/385454754" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-            <div class="vid-margin" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/273722991" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-            <div class="vid-margin embed-container" ><iframe src='https://www.youtube.com/embed/3KtcKdMw3vs' frameborder='0' allowfullscreen></iframe></div>
-            <div class="vid-margin" style="padding:63.72% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/381427317" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        </div>
+    </div>
+    <div class="box1">
+        <div>
+            <div class="flex-row">
+                <div class="video-box">
+                    <img src="/Public/plaque.png" alt="">
+                </div>
+                <div class="text-box">
+                    <h2>3D Plaque Award Design</h2>
+                    <p>Creating a plaque award for people completing anniversaries at the company</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box1">
+        <div>
+            <div class="flex-row">
+                <div class="video-box">
+                    <video src="/Public/logo thumbnail.mp4" autoplay loop></video>
+                </div>
+                <div class="text-box">
+                    <h2>Logo Animation Collection!</h2>
+                    <p>Creating a plaque award for people completing anniversaries at the company</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
-            
-        </div>
-        <div class="iframe-container">
-            <div class="vid-margin" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/355556197" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-            <div class="vid-margin" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/273721409" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-            <div class="vid-margin" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/367825141" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-            <div class="vid-margin" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/273729445" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-            <div class="vid-margin" style="padding:67.5% 0 0 0;position:relative;" ><img style="position:absolute;top:0;left:0;width:100%;height:100%;" src="/Public/circular.gif" alt=""></div>
-        </div>
-    </div>
-    <div class="center">
-        <div id="social-test">
-            <div class="catch">
-            <p class="medium">like what you see ?</p>
-            <p class="large">Connect with me</p>
-            </div>
-            <ul class="social">
-                <li><a href="https://instagram.com/jaykaylmao"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.behance.net/jaytomar"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/jaytomar/"><i class="fab fa-linkedin-in" aria-hidden="true"></a></i></li>
-                <li><a href="https://github.com/jaytomar"><i class="fa fa-github" aria-hidden="true"></a></i></li>
-                </ul>
-            <p class="credits">or mail at <a href="mailto:jaytomar26@gmail.com"> jaytomar26@gmail.com</a></p>
-        </div>
-    </div>
 </body>
-<script src="script.js"></script>
-
 </html>
