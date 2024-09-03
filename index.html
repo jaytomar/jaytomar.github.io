@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,99 +8,18 @@
 </head>
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
-<script>
-    
-</script>
-<style>
-    @font-face {
-        font-family: 'reckless';
-        src: url('/Public/RecklessTRIAL-Bold.otf')  format('opentype');
-        src: url('/Public/RecklessTRIAL-Regular.otf')  format('opentype');
-        src: url('/Public/RecklessTRIAL-Light.otf')  format('opentype');
-    }
+<link rel="stylesheet" href="styles.css">
 
-    @font-face {
-        font-family: 'Switzer';
-        src: url('/Public/Switzer-Regular.otf')  format('opentype');
-    }
-    body{
-        display: flex;
-        flex-direction: column;
-        justify-content: center; 
-        outline: 0;
-        margin: 0;
-    }
-    .inner-section{
-        max-width:1920px;
-        display: flex;
-        align-content: center;
-    }
 
-    .main-section{
-        width: 100vw;
-        display: flex;
-        justify-content: center; 
-    }
-    .box1{
-        display: flex;
-        /* background-color: aqua; */
-        max-width: 1000px;
-        max-height: 300px;
-        align-self: center;
-    }
-    .box1 h2{
-        font-size: 42px;
-    }
-    h2{
-        font-family: "reckless";
-        font-size: 42px;
-        margin: 5px 0px;
-    }
-    p{
-        font-family: "Switzer" !important;
-        font-size: 18px;
-        margin: 5px 0px;
-
-    }
-    .flex-row{
-        display:flex;
-        
-    }
-
-    .regular{
-        font-family: "reckless";
-    }
-    .align-center{
-        align-self: center;
-    }
-
-    video, img{
-        max-height:300px;
-        display: flex;
-        outline: none;
-        border: none;
-
-    }
-
-    .video-box{
-        max-width: 800px;
-    }
-    .text-box{
-        padding: 20px;
-    }
-    video, img {
-clip-path: inset(2px 2px);
-}
-
-.middle-text{
-    font-size: 48px;
-    margin: 45px;
-}
-</style>
 <body>
+    <div class="circle hover-cursor"></div>
+    <div class="click">Click!</div>
     <div class="main-section">
-        <div class="innver-section">
+        <div class="inner-section desktop-lottie">
             <lottie-player src="Public/main header.json" background="transparent"  speed=".9"   loop  autoplay></lottie-player>
+        </div>
+        <div class="inner-section hide mobile-lottie">
+            <lottie-player src="Public/header mobile.json" background="transparent"  speed=".9"   loop  autoplay></lottie-player>
         </div>
     </div>
     <h2 class="align-center regular middle-text">Check out my work!</h2>
@@ -149,4 +69,10 @@ clip-path: inset(2px 2px);
     <br>
 
 </body>
+<script src="script.js"></script>
+
+<script>
+  
+
+    </script>
 </html>
