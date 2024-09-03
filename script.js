@@ -75,7 +75,7 @@ tick();
 
 
 
-  var text = Array.from(document.querySelectorAll('.box1'));
+  var text = Array.from(document.querySelectorAll('.has-hover'));
 
   text.forEach(text => {
   text.addEventListener('mousemove', function() {
