@@ -76,7 +76,7 @@ tick();
 // this function create for page scroll and when screen scroll down on page referesh in both case code properly work that's why make this function
 function scrollTop() {
   // 500 -> This is the value in px of the distance to be scrolled for the 'scroll-to-top' button to show-up
-  if ($(window).scrollTop() > 500) {
+  if ($(window).scrollTop() > 50) {
     $(".backToTopBtn").addClass("active");
   } else {
     $(".backToTopBtn").removeClass("active");
