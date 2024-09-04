@@ -1,13 +1,51 @@
 @font-face {
     font-family: 'reckless';
-    src: url('/Public/RecklessTRIAL-Bold.otf')  format('opentype');
-    src: url('/Public/RecklessTRIAL-Regular.otf')  format('opentype');
-    src: url('/Public/RecklessTRIAL-Light.otf')  format('opentype');
+    src: url('/Public/fonts/RecklessTRIAL-Bold.otf')  format('opentype');
+    src: url('/Public/fonts/RecklessTRIAL-Regular.otf')  format('opentype');
+    src: url('/Public/fonts/RecklessTRIAL-Light.otf')  format('opentype');
 }
 
 @font-face {
     font-family: 'Switzer';
-    src: url('/Public/Switzer-Regular.otf')  format('opentype');
+    src: url('/Public/fonts/Switzer-Regular.otf')   format('opentype');
+}
+
+
+@font-face {
+    font-family: 'Switzer';
+    src: url('/Public/fonts/Switzer-Semibold.otf')  format('opentype');
+    font-weight: bold;
+
+    src: url('/Public/fonts/Switzer-Light.otf')  format('opentype');
+    src: url('/Public/fonts/Switzer-Semibold.otf')  format('opentype');
+    src: url('/Public/fonts/Switzer-Medium.otf')  format('opentype');
+}
+
+@font-face {
+    font-family: 'Switzer';
+    src: url('/Public/fonts/Switzer-Light.otf')  format('opentype');
+    font-weight: light;
+
+    src: url('/Public/fonts/Switzer-Bold.otf')  format('opentype');
+    src: url('/Public/fonts/Switzer-Semibold.otf')  format('opentype');
+    src: url('/Public/fonts/Switzer-Medium.otf')  format('opentype');
+}
+
+@font-face {
+    font-family: 'Switzer';
+    src: url('/Public/fonts/Switzer-Light.otf')  format('opentype');
+    font-weight: bolder;
+
+    src: url('/Public/fonts/Switzer-Medium.otf')  format('opentype');
+}
+@font-face {
+    font-family: 'Switzer';
+    src: url('/Public/fonts/Switzer-Light.otf')  format('opentype');
+    font-weight: light;
+
+    src: url('/Public/fonts/Switzer-Bold.otf')  format('opentype');
+    src: url('/Public/fonts/Switzer-Semibold.otf')  format('opentype');
+    src: url('/Public/fonts/Switzer-Medium.otf')  format('opentype');
 }
 body{
     display: flex;
@@ -15,6 +53,13 @@ body{
     justify-content: center; 
     outline: 0;
     margin: 0;
+
+}
+
+
+
+.width-100 img{
+    object-fit: cover;
 
 }
 
@@ -48,8 +93,10 @@ scrollbar-width: none; /* Firefox */
     /* background-color: aqua; */
     max-width: 1000px;
     max-height: fit-content;
+    margin: 20px 0px;
     align-self: center;
     z-index: 1;
+
 }
 .box1 h2{
     font-size: 42px;
@@ -65,6 +112,13 @@ p{
     margin: 5px 0px;
 
 }
+
+
+/* .drop-shadow{
+    -webkit-box-shadow: 0px 10px 46px -18px rgba(0,0,0,0.46);
+    -moz-box-shadow: 0px 10px 46px -18px rgba(0,0,0,0.46);
+    box-shadow: 0px 10px 46px -18px rgba(0,0,0,0.46);
+} */
 .flex-row{
     display:flex;
     
@@ -173,10 +227,11 @@ html {
 cursor: none;
 }
 
+
 .click{
 font-size: 16px;
 font-family: "reckless";
-font-weight: 200;
+font-weight: light;
 z-index:100;
 color: white;
 --circle-size: 80px;
@@ -253,6 +308,44 @@ p{
     padding: 0px;
 }
 
+  /* Style for scroll-top button */
+  .backToTopBtn {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 1;
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    border: none;
+    color: #cccccc;
+    border-radius: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .backToTopBtn:not(:hover) {
+    background: #1f1f1f;
+  }
+  .backToTopBtn:hover {
+    background: #0f0f0f;
+  }
+  .backToTopBtn.active {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .backToTopBtn:not(.active) {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+
+
+
+
+
+
 
 @media only screen and (max-width: 600px) {
     .circle, .click{
@@ -266,7 +359,9 @@ p{
     }
 
     .inner-section{
-        max-width:100%;
+        margin-top: 5px;
+        overflow: hidden;
+        transform: scaleY(4);
 
     }
     .video-box{
