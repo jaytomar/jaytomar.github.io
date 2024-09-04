@@ -341,7 +341,11 @@ p{
   }
   
 
+  .height-change{
+    margin-top: none;
+    transform: none;
 
+}
 
 
 
@@ -358,7 +362,7 @@ p{
         display: flex;
     }
 
-    .inner-section{
+    .height-change{
         margin-top: 5px;
         overflow: hidden;
         transform: scaleY(4);
