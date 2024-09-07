@@ -58,6 +58,34 @@ body{
 
 
 
+.work-type{
+    max-width: max-content;
+    padding: 3px 6px;
+    font-family: "Switzer";
+    font-size: 14px;
+    margin-right: 5px;
+    border-radius: 2px;
+}
+.red{
+    background-color: #FFD1D7;
+    color: #F5344B;
+}
+.blue{
+    background-color: #D8F3FF;
+    color: #3596BF;
+}
+
+.background-box{
+    padding: 3px 12px;
+    color: white;
+    width: min-content;
+    background-color: #0f0f0f;
+}
+
+.width-100perc{
+    max-width: 100% !important;
+}
+
 .width-100 img{
     object-fit: cover;
 
@@ -350,7 +378,6 @@ p{
 .subtext{
     color: grey;
 }
-
 
 
 
