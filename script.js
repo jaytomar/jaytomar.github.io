@@ -1,5 +1,30 @@
 console.clear();
+var element = Array.from(document.querySelectorAll(".nda-btn")); //grab the element
+
+const overlay = document.getElementsByClassName("form-overlay")[0]
+const form = document.getElementsByClassName("nda-form")[0]
+
+console.log(form);
+
+element.forEach(ele => {
+  console.log('enter');
+  ele.addEventListener('click', function() {
+    console.log('enter');
+    overlay.classList.add('nda-show');
+    overlay.classList.remove('nda-remove');
+
+  })
+})
+
+document.addEventListener('mouseup', function(e) {
+  if (!form.contains(e.target)) {
+    overlay.classList.add('nda-remove');
+    overlay.classList.remove('nda-show');
     
+  }
+});
+
+
 // Select the circle element
 const circleElement = document.querySelector(".circle");
 const textElement = document.querySelector(".click");
@@ -99,14 +124,14 @@ $(function () {
 
   text.forEach(text => {
   text.addEventListener('mousemove', function() {
-  console.log('enter');
+  // console.log('enter');
   circleElement.classList.add('hover-cursor');
   textElement.classList.add('show-click');
 
   })
   //To remove the class when it doesn't hover the text
   text.addEventListener('mouseleave', function () {
-  console.log('leave');
+  // console.log('leave');
   circleElement.classList.remove('hover-cursor');
   textElement.classList.remove('show-click');
   })
@@ -116,12 +141,12 @@ $(function () {
 
   text2.forEach(text => {
   text.addEventListener('mousemove', function() {
-  console.log('enter');
+  // console.log('enter');
   circleElement.classList.add('hover-cursor');
   })
   //To remove the class when it doesn't hover the text
   text.addEventListener('mouseleave', function () {
-  console.log('leave');
+  // console.log('leave');
   circleElement.classList.remove('hover-cursor');
   textElement.classList.remove('show-click');
   })
