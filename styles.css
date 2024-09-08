@@ -57,6 +57,75 @@ body{
 }
 
 
+.contact-lottie{
+    max-width: 200px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+
+.fa-brands{
+    padding: 30px;
+    border-radius: 70px;
+
+}
+
+.fa-instagram:hover{
+    border-radius: 100px;
+    background-color: rgb(231, 7, 213);
+    padding: 30px;
+    transition: 0.2s;
+}
+
+ .fa-facebook:hover{
+    border-radius: 70px;
+    background-color: rgb(0, 106, 206);
+    padding: 30px;
+    transition: 0.2s;
+}
+
+.fa-twitter:hover{
+    border-radius: 70px;
+    background-color: rgb(0, 204, 255);
+    padding: 30px;
+    transition: 0.2s;
+}
+
+.fa-discord:hover{
+    color: white;
+    border-radius: 70px;
+    background-color: rgb(144, 96, 233);
+    padding: 30px;
+    transition: 0.2s;
+}
+
+.fa-youtube:hover{
+    border-radius: 70px;
+    border: 2px solid red;
+    background-color: red;
+    padding: 30px;
+    transition: 0.2s;
+}
+
+.fa-linkedin:hover{
+    border-radius: 70px;
+    background-color: rgb(45, 155, 199);
+    padding: 30px;
+    transition: 0.2s;
+}
+
+.fa-github:hover{
+    border-radius: 70px;
+    border: 2px solid rgb(0, 10, 53);
+    background-color: rgb(0, 10, 53);
+    padding: 30px;
+    transition: 0.2s;
+}
+
 
 .work-type{
     max-width: max-content;
@@ -250,6 +319,44 @@ iframe{
     width: 100%;
 }
 
+
+.fixed-overlay{
+
+    position: fixed;
+    z-index: 10;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%,50%);
+    transition: all .3s;
+
+}
+
+.button{
+    display: flex;
+    align-self: center;
+    transition: all .3s;
+
+}
+
+.button:hover{
+    transform: translate(0px,-50px) scale(180%);
+    transition: all .3s;
+}
+
+
+.button a{
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border-width: 0;
+    padding: 5px 15px;
+}
+.button h2{
+    font-family: "Playfair Display";
+    font-size: 22px;
+
+}
 .page{
     max-width: 820px;
     display: flex;
@@ -260,7 +367,7 @@ iframe{
 .width-hack{
     min-width: 90vw;
 }
-iframe {
+.video-box-large iframe {
     height: auto;
     width: 100%;
     aspect-ratio: 16 / 9;
@@ -440,6 +547,10 @@ p{
     .nda-form{
         min-height: 550px;
         max-height: min-content;
+    }
+
+    .form-overlay iframe{
+        aspect-ratio: none;
     }
     .video-box img{
         max-height: none;
