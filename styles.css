@@ -438,7 +438,7 @@ p{
     }
 
     .nda-form{
-        min-height: min-content;
+        min-height: 550x;
         max-height: min-content;
     }
     .video-box img{
