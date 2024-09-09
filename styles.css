@@ -343,6 +343,9 @@ iframe{
 
 }
 
+.remove-clip{
+    clip-path:none;
+}
 .btn-lottie{
     max-width: 40px;
 }
