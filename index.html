@@ -15,6 +15,7 @@
 
   gtag('config', 'G-XS20BJC3KT');
 </script>
+<script src="https://unpkg.com/@rive-app/canvas"></script>
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +25,6 @@
 <body>
 <div class="main-page">
     <div class="fixed-overlay has-hover">
-        
         <div class="button">
             <div class="btn-lottie">
                 <lottie-player src="Public/contact-lottie.json" background="transparent"  speed=".9"   loop  autoplay></lottie-player>
@@ -37,10 +37,15 @@
     <div class="form-overlay nda-remove">
     <iframe style="border:none;width:100%;" class="nda-form " id="my-form-kemp7u" src="https://opnform.com/forms/my-form-kemp7u"></iframe><script type="text/javascript" onload="initEmbed('my-form-kemp7u')" src="https://opnform.com/widgets/iframe.min.js"></script>
     </div>    
-    <div class="circle hover-cursor"></div>
+    <div class="circle hover-cursor-transparent"></div>
     <div class="click">Click!</div>
+    
     <div class="main-section">
+        <!-- <canvas id="canvas" class="canvas desktop-lottie" width="2940" height="1052"></canvas> -->
+        <!-- <canvas id="canvas2" class="canvas desktop-lottie" width="2940" height="1052"></canvas> -->
+
         <div class="inner-section desktop-lottie">
+
             <lottie-player src="Public/main header.json" background="transparent"  speed=".9"   loop  autoplay></lottie-player>
         </div>
         <div class="inner-section hide mobile-lottie">
@@ -49,18 +54,81 @@
     </div>
     <div class="home-page">
         <!-- <h2 class="align-center regular middle-text">Check out my work!</h2> -->
-        <br>
+    <br>
+    <a href="/fleek.html" class="box1">
+            <div class="box1 has-hover drop-shadow">
+                <div class="flex-row">
+                    <div class="video-box">
+                        <video src="/Public/thumbnails/fleek thumbnail.mp4" autoplay playsinline loop muted></video>
+                    </div>
+                    <div class="text-box">
+      
+                        <div>
+                            <h2>Fleek - Build Lightning Fast</h2>
+                            <p>Creating a dynamic promo video for Fleek, showcasing their product's speed and reliability with lightning-fast visuals.</p>
+                            <div class="flex">
+                                <p class="work-type blue">Freelance</p>
+                                <p class="work-type red">Motion Graphics, Art Direction</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+            <a href="/snowsurance.html" class="box1">
+            <div class="box1 has-hover drop-shadow">
+                <div class="flex-row">
+                    <div class="video-box">
+                        <video src="/Public/thumbnails/ui ux motion thumbnail.mp4" autoplay playsinline loop muted></video>
+                    </div>
+                    <div class="text-box">
+      
+                        <div>
+                            <h2>Collection - Everything UI UX</h2>
+                            <p>A visual collection of UI/UX animations and micro-interactions.</p>
+                            <div class="flex">
+                                <p class="work-type blue">Freelance</p>
+                                <p class="work-type red">Motion Graphics, Art Direction</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>    
+                </a>
+            <a href="/snowsurance.html" class="box1">
+            <div class="box1 has-hover drop-shadow">
+                <div class="flex-row">
+                    <div class="video-box">
+                        <video src="/Public/thumbnails/suraasa ITO thumbnail.mp4" autoplay playsinline loop muted></video>
+                    </div>
+                    <div class="text-box">
+      
+                        <div>
+                            <h2>Suraasa ITO Promo</h2>
+                            <p>I led the end-to-end creation of a promo video for Suraasa's ITO program</p>
+                            <div class="flex">
+                                <p class="work-type blue">Professional</p>
+                                <p class="work-type red">Motion Graphics, Art Direction</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>    
     <a href="/snowsurance.html" class="box1">
         <div class="box1 has-hover drop-shadow">
             <div class="flex-row">
                 <div class="video-box">
-                    <video src="/Public/thumbnails/snowsurance thumbnail.mp4" autoplay playsinline loop muted></video>
+                    <div class="drop-shadow-box">
+                        <video src="/Public/thumbnails/snowsurance thumbnail.mp4" autoplay playsinline loop muted></video>
+                    </div>
                 </div>
                 <div class="text-box">
   
                     <div>
                         <h2>Snowsurance TV Commercial</h2>
-                        <p>A 30 second story of the best they have to offer with design and aesthetics inpired by Apple's typography and minimal design.</p>
+                        <p>A 30 second story of the best they have to offer with design and aesthetics inspired by Apple's typography and minimal design.</p>
                         <div class="flex">
                             <p class="work-type blue">Freelance</p>
                             <p class="work-type red">Motion Graphics, Art Direction</p>
@@ -75,11 +143,13 @@
         <div>
             <div class="flex-row">
                 <div class="video-box">
-                    <img src="/Public/thumbnails/plaque.png" alt="">
+                    <div class="drop-shadow-box">
+                        <img src="/Public/thumbnails/plaque.png" alt="">
+                    </div>
                 </div>
                 <div class="text-box">
                     <h2>3D Plaque Award Design</h2>
-                    <p>Creating a plaque award for people completing anniversaries at the company</p>
+                    <p>Designing timeless plaque awards to celebrate meaningful anniversaries within the company.</p>
                     <div class="flex">
                         <p class="work-type blue">Work</p>
                         <p class="work-type red">3D</p>
@@ -94,11 +164,13 @@
             <div>
                 <div class="flex-row">
                     <div class="video-box">
+                        <div class="drop-shadow-box">
                         <img src="/Public/thumbnails/plainsco-thumbnail.jpg" alt="" class="">
+                        </div>
                     </div>
                     <div class="text-box">
                         <h2>Logo Design - The Plains Co.</h2>
-                        <p>A clean, friendly and minimal logo for a clothing brand focusing on cleaner designs</p>
+                        <p>Creating a clean, friendly, and minimal logo that embodies the essence of a modern, style-forward clothing brand.</p>
                         <div class="flex">
                             <p class="work-type blue">Freelance</p>
                             <p class="work-type red">Branding</p>
@@ -113,15 +185,17 @@
         <div class="box1 has-hover drop-shadow">
             <div class="flex-row">
                 <div class="video-box">
-                    <video src="/Public/thumbnails/Stable Money thumbnail.mp4" autoplay playsinline loop muted></video>
-                </div>
+                    <div class="drop-shadow-box">
+                        <video src="/Public/thumbnails/Stable Money thumbnail.mp4" autoplay playsinline loop muted></video>
+                        </div>
+                    </div>
                 <div class="text-box">
                     <div>
                         <div class="background-box"><p>NDA</p></div>
                     </div>
                     <div>
                         <h2>Stable Money Ads</h2>
-                        <p>Adding delightful motion and end-slates to complete the light-hearted and entertaining ads.</p>
+                        <p>Enhancing ads with playful motion and polished end-slates that bring a light-hearted and engaging finish.</p>
                         <div class="flex">
                             <p class="work-type blue">Freelance</p>
                             <p class="work-type red">Motion Graphics, CGI</p>
@@ -137,7 +211,9 @@
             <div>
                 <div class="flex-row">
                     <div class="video-box">
+                        <div class="drop-shadow-box">
                         <video src="/Public/thumbnails/logo thumbnail.mp4" autoplay loop playsinline muted></video>
+                        </div>
                     </div>
                     <div class="text-box">
                         <h2>Logo Animation Collection!</h2>
@@ -156,7 +232,9 @@
         <div class="box1 has-hover drop-shadow">
             <div class="flex-row">
                 <div class="video-box">
+                    <div class="drop-shadow-box">
                     <img src="/Public/thumbnails/amazon-thumbnail.png" ></img>
+                    </div>
                 </div>
                 <div class="text-box">
                     <div>
@@ -179,12 +257,14 @@
         <div class="box1 has-hover drop-shadow">
             <div class="flex-row">
                 <div class="video-box">
+                    <div class="drop-shadow-box">
                     <video src="/Public/thumbnails/greynade-thumbnail.mp4" autoplay loop playsinline muted></video>
+                    </div>
                 </div>
                 <div class="text-box">
                     <div>
                         <h2>Greynade - Honda Civic - Promotional Video</h2>
-                        <p>Covering a passionate project for an awesome car that looks like no other.</p>
+                        <p>Capturing the essence of an extraordinary car with bold design and storytelling that stands out from the rest.</p>
                         <div class="flex">
                             <p class="work-type blue">Freelance</p>
                             <p class="work-type red">Video Editing</p>
@@ -198,7 +278,9 @@
         <div class="box1 has-hover drop-shadow">
             <div class="flex-row">
                 <div class="video-box">
-                    <img src="/Public/thumbnails/suraasa-thumbnail.png" ></img>
+                    <div class="drop-shadow-box">
+                        <img src="/Public/thumbnails/suraasa-thumbnail.png" ></img>
+                    </div>
                 </div>
                 <div class="text-box">
                     <div>
@@ -220,7 +302,9 @@
         <div class="box1 has-hover drop-shadow">
             <div class="flex-row">
                 <div class="video-box">
+                    <div class="drop-shadow-box">
                     <video src="/Public/thumbnails/Minimal-Avatars-Thumbnail.mp4" autoplay loop playsinline muted></video>
+                    </div>
                 </div>
                 <div class="text-box">
                     <div>
@@ -239,7 +323,9 @@
         <div class="box1 has-hover drop-shadow">
             <div class="flex-row">
                 <div class="video-box">
-                    <video src="/Public/thumbnails/core values thumbnail.mp4" autoplay loop playsinline muted></video>
+                    <div class="drop-shadow-box">
+                        <video src="/Public/thumbnails/core values thumbnail.mp4" autoplay loop playsinline muted></video>
+                    </div>
                 </div>
                 <div class="text-box">
                     <div>
@@ -258,7 +344,9 @@
         <div class="box1 has-hover drop-shadow">
             <div class="flex-row">
                 <div class="video-box">
-                    <video src="/Public/thumbnails/Gearheads Thumbnail2.mp4" autoplay loop playsinline muted></video>
+                    <div class="drop-shadow-box">
+                        <video src="/Public/thumbnails/Gearheads Thumbnail2.mp4" autoplay loop playsinline muted></video>
+                    </div>
                 </div>
                 <div class="text-box">
                     <div>
@@ -277,7 +365,9 @@
         <div class="box1 has-hover drop-shadow">
             <div class="flex-row">
                 <div class="video-box">
-                    <img src="/Public/thumbnails/upstox-thumbnail.png" ></img>
+                    <div class="drop-shadow-box">
+                        <img src="/Public/thumbnails/upstox-thumbnail.png" ></img>
+                    </div>
                 </div>
                 <div class="text-box">
                     <div>

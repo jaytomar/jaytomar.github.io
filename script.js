@@ -1,10 +1,10 @@
-console.clear();
+
 var element = Array.from(document.querySelectorAll(".nda-btn")); //grab the element
 
 const overlay = document.getElementsByClassName("form-overlay")[0]
 const form = document.getElementsByClassName("nda-form")[0]
 
-console.log(form);
+// console.log(form);
 
 element.forEach(ele => {
   console.log('enter');
@@ -136,18 +136,66 @@ $(function () {
   textElement.classList.remove('show-click');
   })
   })
-  var text2 = Array.from(document.querySelectorAll('.inner-section'));
+  var text2 = Array.from(document.querySelectorAll('.canvas'));
   var boddy = Array.from(document.querySelectorAll('body'));
 
   text2.forEach(text => {
   text.addEventListener('mousemove', function() {
   // console.log('enter');
-  circleElement.classList.add('hover-cursor');
+  circleElement.classList.add('hover-cursor-transparent');
+  circleElement.classList.remove('hover-cursor');
+
   })
   //To remove the class when it doesn't hover the text
   text.addEventListener('mouseleave', function () {
-  // console.log('leave');
-  circleElement.classList.remove('hover-cursor');
+  console.log('leave');
+  circleElement.classList.remove('hover-cursor-transparent');
+  circleElement.classList.add('hover-cursor');
+
   textElement.classList.remove('show-click');
   })
+
+
+  // let layout = new rive.Layout({
+  //   fit: rive.Fit.FitWidth,
+  // });
+  
+
+  // const r = new rive.Rive({
+  //   src: "/public/portfolio.riv",
+  //   // OR the path to a discoverable and public Rive asset
+  //   // src: '/public/example.riv',
+  //   canvas: document.getElementById("canvas"),
+  //   autoplay: true,
+  //   layout: layout,
+  //   artboard: "MAIN 2", // Optional. If not supplied the default is selected
+  //   stateMachines: "State Machine 1",
+  //   onLoad: () => {
+  //     r.resizeDrawingSurfaceToCanvas();
+  //   },
+  //   });
+  //   window.addEventListener("resize", () => {
+  //     r.resizeDrawingSurfaceToCanvas();
+  //   });
+
+
+
+//       const g = new rive.Rive({
+//         src: "/public/portfolio.riv",
+//         // OR the path to a discoverable and public Rive asset
+//         // src: '/public/example.riv',
+//         canvas: document.getElementById("canvas2"),
+//         autoplay: true,
+//         layout: layout,
+//         artboard: "MAIN 2", // Optional. If not supplied the default is selected
+//         stateMachines: "State Machine 1",
+//         onLoad: () => {
+//          g.resizeDrawingSurfaceToCanvas();
+//         },
+//         });
+//         window.addEventListener("resize", () => {
+//           g.resizeDrawingSurfaceToCanvas();
+//         });
+
+
 })
