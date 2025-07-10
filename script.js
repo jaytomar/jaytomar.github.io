@@ -199,11 +199,6 @@ $(function () {
       name: "Greynade - Promo",
       videoSrc: "/Public/thumbnails/greynade-thumbnail.mp4",
       link: "/greynade.html"
-    },
-    {
-      name: "Project 5",
-      videoSrc: "project5.mp4",
-      link: "/project5.html"
     }
   ];
   let currentIndex = 0;
@@ -258,4 +253,25 @@ $(function () {
           window.addEventListener("resize", () => {
             // g2.resizeDrawingSurfaceToCanvas();
           });
+
+
+
+          const box = document.querySelector('.main-wrapper');
+          const box2 = document.querySelector('.hero-section');
+          function resizeBox() {
+            console.log(box2);
+            const vw = box2.clientWidth;
+            const vh = box2.clientHeight;
+            const scaleX = vw / 952;
+            const scaleY = vh / 529.5;
+            const scale = Math.min(scaleX, scaleY);
+            console.log(scale);
+            box.style.transform = `scale(${scale*0.7})`;
+          }
+      
+          window.addEventListener('resize', resizeBox);
+          resizeBox(); // initial run
+      
+
+
 })
