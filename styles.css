@@ -179,11 +179,55 @@ scrollbar-width: none; /* Firefox */
     overflow: hidden;
     height: min-content;
 }
+.hero-left{
+    width: 373px;
+    height: 529px;
+}
+.hero-right{
+    justify-content: space-between;
+    width: 551px;
+    height: 529px;
+}
+.hero-right-top{
+    height: 155px;
+    width: 551px;
+}
+.hero-right-top img{
+    max-height: 100%;
+}
+.hero-right-top canvas{
+    height: 155px;
+    width: 551px;   
+}
+.hero-right-bottom{
+    max-height: 347px;
+    max-width: 551px;
+}
+.hero-video-container{
+    height: 350px;
+    overflow: hidden;
+    border-radius: 14px;
+}
 
-.main-section{
-    max-width: 1920px;
+.hero-video video{
+    height: 350px;
+    clip-path: unset;
+
+
+}
+
+
+.hero-section{
+    width: 100vw;
+    height: 60vh;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
+    align-items: center;
+}
+.main-section{
+    width: 952px;
+    display: flex;
+    justify-content: space-between; 
 }
 .box1{
     display: flex;
@@ -394,6 +438,35 @@ iframe{
 }
 
 
+#video-container {
+    position: relative;
+    width: 640px;
+    margin: auto;
+  }
+
+  #video-link {
+    display: block;
+    position: relative;
+  }
+
+
+
+
+  #project-name {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 0;
+    text-align: left;
+    color: white;
+    font-size: 1.4em;
+    font-family: "arialnarrow";
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    pointer-events: none;
+  }
+
+
+
 *,
 *::before,
 *::after {
@@ -526,9 +599,25 @@ p{
 
 }
 
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-row2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
 .subtext{
     color: grey;
 }
+
+
 
 .casestudy-video video{
     max-width: 100%;

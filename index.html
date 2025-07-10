@@ -39,18 +39,25 @@
     </div>    
     <div class="circle hover-cursor-transparent"></div>
     <div class="click">Click!</div>
-    
+    <div class="hero-section">
     <div class="main-section">
-        <!-- <canvas id="canvas" class="canvas desktop-lottie" width="2940" height="1052"></canvas> -->
-        <!-- <canvas id="canvas2" class="canvas desktop-lottie" width="2940" height="1052"></canvas> -->
-
-        <div class="inner-section desktop-lottie">
-
-            <lottie-player src="Public/main header.json" background="transparent"  speed=".9"   loop  autoplay></lottie-player>
+        <div class="hero-left">
+            <canvas id="canvas1" class="canvas" width="373" height="529"></canvas>
         </div>
-        <div class="inner-section hide mobile-lottie">
-            <lottie-player src="Public/header mobile.json" background="transparent"  speed=".9"   loop  autoplay></lottie-player>
+        <div class="flex-column hero-right">
+            <div class="flex-row2 hero-right-top">
+                <canvas id="canvas2" class="canvas" width="1102" height="320" ></canvas>
+            </div>
+            <div class="hero-video hero-right-bottom">
+                <div class="hero-video-container">
+                    <a id="video-link" href="#" target="_blank">
+                        <div id="project-name"></div>                
+                        <video id="project-video" autoplay muted loop playsinline></video>
+                      </a>
+                </div>
+            </div>
         </div>
+    </div>
     </div>
     <div class="home-page">
         <!-- <h2 class="align-center regular middle-text">Check out my work!</h2> -->

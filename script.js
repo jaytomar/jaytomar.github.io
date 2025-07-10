@@ -156,9 +156,12 @@ $(function () {
   })
 
 
-  // let layout = new rive.Layout({
-  //   fit: rive.Fit.FitWidth,
-  // });
+  let layout = new rive.Layout({
+    fit: rive.Fit.Fit,
+  });
+  let layout2 = new rive.Layout({
+    fit: rive.Fit.FitHeight,
+  });
   
 
   // const r = new rive.Rive({
@@ -168,7 +171,6 @@ $(function () {
   //   canvas: document.getElementById("canvas"),
   //   autoplay: true,
   //   layout: layout,
-  //   artboard: "MAIN 2", // Optional. If not supplied the default is selected
   //   stateMachines: "State Machine 1",
   //   onLoad: () => {
   //     r.resizeDrawingSurfaceToCanvas();
@@ -177,25 +179,83 @@ $(function () {
   //   window.addEventListener("resize", () => {
   //     r.resizeDrawingSurfaceToCanvas();
   //   });
+  const projects = [
+    {
+      name: "Suraasa ITO - Promo",
+      videoSrc: "/Public/thumbnails/suraasa ITO thumbnail.mp4",
+      link: "/ito.html"
+    },
+    {
+      name: "Fleek - Build Lightning Fast",
+      videoSrc: "/Public/thumbnails/fleek thumbnail.mp4",
+      link: "/fleek.html"
+    },
+    {
+      name: "Ghost Projector - Promo",
+      videoSrc: "/Public/thumbnails/Ghost Projector Thumbnail.mp4",
+      link: "/ghost-projector.html"
+    },
+    {
+      name: "Greynade - Promo",
+      videoSrc: "/Public/thumbnails/greynade-thumbnail.mp4",
+      link: "/greynade.html"
+    },
+    {
+      name: "Project 5",
+      videoSrc: "project5.mp4",
+      link: "/project5.html"
+    }
+  ];
+  let currentIndex = 0;
+  const videoElement = document.getElementById("project-video");
+  const nameElement = document.getElementById("project-name");
+  const linkElement = document.getElementById("video-link");
+
+  function updateProject() {
+    const project = projects[currentIndex];
+    videoElement.src = project.videoSrc;
+    nameElement.textContent = project.name;
+    linkElement.href = project.link;
+
+    currentIndex = (currentIndex + 1) % projects.length;
+  }
+
+  updateProject(); // initial call
+  setInterval(updateProject, 5000);
 
 
 
-//       const g = new rive.Rive({
-//         src: "/public/portfolio.riv",
-//         // OR the path to a discoverable and public Rive asset
-//         // src: '/public/example.riv',
-//         canvas: document.getElementById("canvas2"),
-//         autoplay: true,
-//         layout: layout,
-//         artboard: "MAIN 2", // Optional. If not supplied the default is selected
-//         stateMachines: "State Machine 1",
-//         onLoad: () => {
-//          g.resizeDrawingSurfaceToCanvas();
-//         },
-//         });
-//         window.addEventListener("resize", () => {
-//           g.resizeDrawingSurfaceToCanvas();
-//         });
+      const g = new rive.Rive({
+        src: "Public/hero/portfolio_bentos2.riv",
+        // OR the path to a discoverable and public Rive asset
+        // src: '/public/example.riv',
+        canvas: document.getElementById("canvas1"),
+        autoplay: true,
+        // layout: layout,
+        artboard: "Left", // Optional. If not supplied the default is selected
+        stateMachines: "State Machine 1",
+        onLoad: () => {
+        //  g.resizeDrawingSurfaceToCanvas();
+        },
+        });
+        window.addEventListener("resize", () => {
+          // g.resizeDrawingSurfaceToCanvas();
+        });
 
-
+        const g2 = new rive.Rive({
+          src: "Public/hero/portfolio_bentos2.riv",
+          // OR the path to a discoverable and public Rive asset
+          // src: '/public/example.riv',
+          canvas: document.getElementById("canvas2"),
+          autoplay: true,
+          // layout: layout2,
+          artboard: "Right", // Optional. If not supplied the default is selected
+          stateMachines: "State Machine 1",
+          onLoad: () => {
+          //  g2.resizeDrawingSurfaceToCanvas();
+          },
+          });
+          window.addEventListener("resize", () => {
+            // g2.resizeDrawingSurfaceToCanvas();
+          });
 })
