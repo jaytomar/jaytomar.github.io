@@ -229,6 +229,7 @@ $(function () {
         // layout: layout,
         artboard: "Left", // Optional. If not supplied the default is selected
         stateMachines: "State Machine 1",
+        isTouchScrollEnabled: true,
         onLoad: () => {
         //  g.resizeDrawingSurfaceToCanvas();
         },
@@ -243,6 +244,7 @@ $(function () {
           // src: '/public/example.riv',
           canvas: document.getElementById("canvas2"),
           autoplay: true,
+          isTouchScrollEnabled: true,
           // layout: layout2,
           artboard: "Right", // Optional. If not supplied the default is selected
           stateMachines: "State Machine 1",
