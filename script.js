@@ -266,7 +266,7 @@ $(function () {
             const scaleY = vh / 529.5;
             const scale = Math.min(scaleX, scaleY);
             console.log(scale);
-            box.style.transform = `scale(${scale*0.7})`;
+            box.style.transform = `scale(${scale})`;
           }
       
           window.addEventListener('resize', resizeBox);
